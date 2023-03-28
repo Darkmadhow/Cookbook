@@ -4,6 +4,85 @@
     box-sizing: border-box;
 }
 
+
+.rezept-nav {
+    border: 1px solid black;
+    display: flex;
+}
+
+
+.rezept-navbar {
+    display: flex;
+    border: 1px solid black;
+    height: 1000px;
+    width: 10%;
+}
+
+.rezept-header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.rezept-header img {
+    border: 1px solid black;
+}
+
+.rezept-overview {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
+.rezept-img {
+    width: 45%;
+    border: 1px solid black;
+}
+
+.rezept-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    width: 45%;
+}
+
+.rezept-utensils-rating {
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+.rating-facts {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.rezept-facts {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.rezept-steps-section {
+    border: 1px solid black;
+}
+
+.rezept-steps {
+    border: 1px solid black;
+
+}
+
+.rezept-footer {
+    border: 1px solid black;
+
+}
+
 /*--------------- Rezept Modal ---------------*/
 .modal-body {
     padding: 0;
