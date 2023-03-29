@@ -1,175 +1,207 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*--------------- Text Styling ---------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono", monospace;
+  color: #96dc14;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+  color: #181c3b;
+}
+
+a:hover {
+  color: #96dc14;
+}
+/*--------------- Button Styling ---------------*/
+.btn-primary {
+  background-color: #87cefa;
+  color: whitesmoke;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: slateblue;
+  color: white;
+}
+
+/*--------------- Sidebar: Navigation ---------------*/
+#sidebar {
+  width: 18.75rem;
 }
 
 /*--------------- Rezept Webseite: Navigation ---------------*/
 .rezept-nav {
-    border: 1px solid black;
-    display: flex;
+  border: 1px solid black;
+  display: flex;
 }
 
-
 .rezept-navbar {
-    display: flex;
-    border: 1px solid black;
-    height: 1000px;
-    width: 10%;
+  display: flex;
+  border: 1px solid black;
+  height: 1000px;
+  width: 10%;
 }
 /*--------------- Rezept Webseite: Header ---------------*/
 .rezept-header {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
 }
 
 .rezept-header img {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .rezept-overview {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
 }
 
 /*--------------- Rezept Webseite: Content ---------------*/
 .rezept-img {
-    width: 45%;
-    border: 1px solid black;
+  width: 45%;
+  border: 1px solid black;
 }
 
 .rezept-name {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid black;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  width: 45%;
 }
 
 .rezept-utensils-rating {
-    border: 1px solid black;
-    width: 25%;
-    text-align: center;
+  border: 1px solid black;
+  width: 25%;
+  text-align: center;
 }
 
 .rating-facts {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .rezept-facts {
-    border: 1px solid black;
-    width: 25%;
+  border: 1px solid black;
+  width: 25%;
 }
 
 .rezept-steps-section {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .rezept-steps {
-    border: 1px solid black;
-
+  border: 1px solid black;
 }
 
 .rezept-footer {
-    border: 1px solid black;
-
+  border: 1px solid black;
 }
 
 /*--------------- Rezept Modal Popup ---------------*/
 .modal-body {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .modal-header {
-    border-bottom: none;
-    padding: 0;
-    position: relative;
+  border-bottom: none;
+  padding: 0;
+  position: relative;
 }
 .closeModalBtn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 .modalContainer {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
 }
 
 .modalImage {
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-    border-top-left-radius: var(--bs-modal-inner-border-radius);
-    border-top-right-radius: var(--bs-modal-inner-border-radius);
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
 }
 .modalImage img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .modalTitle {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .modalRating {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .modalRating .checked {
-    color: orange;
+  color: orange;
 }
 .modalRating .unchecked {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .modalTags {
-    display: flex;
-    margin-bottom: 0.5rem;
-    font-size: 0.85rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
 }
 .modalTags .recipeTag {
-    margin-right: 0.5rem;
-    border-radius: 0.3rem;
-    padding: 0 0.3rem;
-    background-color: #333;
-    color: white;
+  margin-right: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0 0.3rem;
+  background-color: #333;
+  color: white;
 }
 
 .modalIngredients {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .modalIngredients hr {
-    margin-top: 0;
+  margin-top: 0;
 }
 .modalIngredients .ingredientItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.3rem 1rem 0.3rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
 }
 
 .ingredientItem input {
-    height: 1.25rem;
-    width: 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .ingredientItem:nth-child(odd) {
-    background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .modal-footer .recipeButton {
-    background-color: lightskyblue;
+  background-color: lightskyblue;
 }
 .modal-footer .recipeButton:hover {
-    background-color: slateblue;
-    color: white;
+  background-color: slateblue;
+  color: white;
 }
