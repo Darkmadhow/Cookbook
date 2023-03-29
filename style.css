@@ -20,6 +20,20 @@ a {
   color: #181c3b;
 }
 
+a:hover {
+  color: #96dc14;
+}
+/*--------------- Button Styling ---------------*/
+.btn-primary {
+  background-color: #87cefa;
+  color: whitesmoke;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: slateblue;
+  color: white;
+}
+
 /*--------------- Sidebar: Navigation ---------------*/
 #sidebar {
   width: 18.75rem;
