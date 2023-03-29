@@ -49,6 +49,24 @@ html.dark-mode img {
   width: 18.75rem;
 }
 
+/*--------------- Rezeptkarten Grid ---------------*/
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.card {
+    margin-bottom: 5rem;
+}
+
+.img-wrapper {
+    height: 15rem;
+}
+.img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+}
 /*--------------- Rezept Webseite: Navigation ---------------*/
 .rezept-nav {
   border: 1px solid black;
