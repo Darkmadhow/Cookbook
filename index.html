@@ -23,16 +23,24 @@
   </head>
   <body>
     <header>
+      <div class="logo-container">
       <img src="img\branding.png" alt="Branding Logo Cook Book" />
+    </div>
     </header>
 
     <main>
-      <h1>Rezept der Woche (400 Pixel)</h1>
-      <div class="dark-mode-switch">
-        <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')"> 
-        <label for="dark-mode">Dark mode</label>
+      <h1 class="text-center">Rezept der Woche</h1>
+
+      <div class="container">
+        <figure>
+      <img src="img\pasta.jpg" width="400" alt="Rezept der Woche Pasta mit Mais und Hack">
+      <figcaption>Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse</figcaption>
+    </figure>
+      </div>
     </main>
 
+
+  
 
 <!-- Sidebar start -->
 
@@ -221,7 +229,18 @@
 
 
     <footer>
-      <p>Elemente des Footers: Impressum, etc.</p>
+      <p>Elemente des Footers: 
+        <button>AGB</button>
+        
+        <button>Datenschutz</button>
+        
+        <button>Impressum</button>
+
+        <button>Kontakt</button>
+
+        <button>Jobs</button>
+
+        </p>
     </footer>
 
     <!-- Button trigger modal -->
