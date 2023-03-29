@@ -25,13 +25,23 @@ a:hover {
 }
 /*--------------- Button Styling ---------------*/
 .btn-primary {
-  background-color: #87cefa;
+  background-color: black;
   color: whitesmoke;
   border: none;
 }
 .btn-primary:hover {
-  background-color: slateblue;
-  color: white;
+  background-color: whitesmoke;
+  color: black;
+  border-color: black;
+}
+
+/*--------------- DARK MODE Switch ---------------*/
+html.dark-mode {
+  filter: invert(100%);
+}
+
+html.dark-mode img {
+  filter: invert(100%);
 }
 
 /*--------------- Sidebar: Navigation ---------------*/
