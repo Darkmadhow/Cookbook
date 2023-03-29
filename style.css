@@ -88,6 +88,16 @@
     padding: 0 1rem;
 }
 
+.modal-header {
+    border-bottom: none;
+    padding: 0;
+    position: relative;
+}
+.closeModalBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 .modalContainer {
     display: flex;
     flex-direction: column;
@@ -97,6 +107,14 @@
 
 .modalImage {
     width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+.modalImage img {
+    width: 100%;
+    height: auto;
 }
 
 .modalTitle {
