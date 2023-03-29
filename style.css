@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
 }
 
 .rezept-header img {
@@ -33,14 +33,17 @@
 
 .rezept-overview {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid black;
+    margin: 2rem 0;
+
 }
 
 /*--------------- Rezept Webseite: Content ---------------*/
 .rezept-img {
     width: 45%;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .rezept-name {
@@ -49,33 +52,117 @@
     text-align: center;
     border: 1px solid black;
     width: 45%;
+    border-radius: 5px;
+    padding: 1rem 0;
+
 }
 
-.rezept-utensils-rating {
-    border: 1px solid black;
-    width: 25%;
-    text-align: center;
+.rezept-ingredients {
+    display: flex;
+    justify-content: space-around;
 }
+
+
+li {
+    list-style-type: none;
+    padding: 0.6rem 0;
+    text-align: left;
+}
+
 
 .rating-facts {
     border: 1px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.rezept-utensils {
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem 0;
+}
+.rezept-bowl {
+    width: 50px;
+    height: 50px;
+}
+
+.rezept-pan {
+    width: 10px;
+    height: 10px;
+}
+
+.rezept-clock {
+    width: 50px;
+    height: 50px;
+}
+
+.rezept-calories {
+    width: 50px;
+    height: 50px;
+}
+
+
+.rezept-utensils li {
     text-align: center;
 }
 
 .rezept-facts {
     border: 1px solid black;
     width: 25%;
+    border-radius: 5px;
+    padding: 1rem 0;
 }
+
+.rezept-facts li {
+    text-align: center;
+}
+
+.rezept-rating {
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 5px;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.duck-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.duck-icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+
+
+/*---------------- Kochschritte -----------------------*/
 
 .rezept-steps-section {
     border: 1px solid black;
+    margin: 2rem 0;
+
 }
+
 
 .rezept-steps {
     border: 1px solid black;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.rezept-steps h2 {
+    text-align: center;
+}
 
+.rezept-steps-section h1 {
+    text-align: center;
 }
 
 .rezept-footer {
