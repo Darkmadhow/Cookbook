@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ecf0fc;
+}
 /*--------------- Text Styling ---------------*/
 h1,
 h2,
@@ -11,7 +15,7 @@ h4,
 h5,
 h6 {
   font-family: "Space Mono", monospace;
-  color: #96dc14;
+  color: #66960e;
 }
 
 p,
@@ -33,6 +37,34 @@ a:hover {
   background-color: whitesmoke;
   color: black;
   border-color: black;
+}
+
+.btn-transparent {
+  color: #e5e5e5;
+  background-color: transparent;
+}
+.btn-transparent:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.recipeButton {
+  background-color: #657e13;
+  color: #e5e5e5;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  border-color: transparent;
+}
+.recipeButton:hover {
+  background: linear-gradient(15deg, #556e03, #7e9e13);
+  color: #fff;
+}
+.recipeButton:active {
+  background: linear-gradient(195deg, #556e03, #7e9e13);
+  color: #fff;
 }
 
 /*--------------- DARK MODE Switch ---------------*/
@@ -58,6 +90,17 @@ html.dark-mode img {
 
 .card {
     margin-bottom: 5rem;
+}
+.card:hover {
+  border-color: #617a0f;
+  box-shadow: -4px 4px 6px 0 #164600;
+}
+.card-footer{
+  background-color: #657e13;
+  z-index: 1;
+}
+.card-footer:hover {
+  background: linear-gradient(15deg, #556e03, #7e9e13);
 }
 .logo-container {
     float: right;
@@ -318,12 +361,4 @@ li {
 }
 .ingredientItem:nth-child(odd) {
   background-color: #e5e5e5;
-}
-
-.modal-footer .recipeButton {
-  background-color: lightskyblue;
-}
-.modal-footer .recipeButton:hover {
-  background-color: slateblue;
-  color: white;
 }

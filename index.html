@@ -126,7 +126,7 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalWraps" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalWraps">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
@@ -134,7 +134,7 @@
 
     <!-- <div class="col mb-5 mt-5">   -->
       <div class="card" style="width: 18rem;">
-        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <a class="stretched-link" href="#modalSalad" data-bs-toggle="modal" data-bs-target="#modalSalad"></a>
         <div class="img-wrapper">
           <img src="img/salat.jpg" class="card-img-top" alt="..." />
         </div>
@@ -147,14 +147,14 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalSalad" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalSalad">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
 
     <!-- <div class="col mb-5 mt-5"> -->
       <div class="card" style="width: 18rem;">
-        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <a class="stretched-link" href="#modalCurry" data-bs-toggle="modal" data-bs-target="#modalCurry"></a>
         <div class="img-wrapper"><img src="img/curry.jpg" class="card-img-top" alt="..." /></div>
         <div class="card-body">
           <h5 class="card-title">Mildes Hähnchencurry</h5>
@@ -165,14 +165,14 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalCurry" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalCurry">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
 
     <!-- <div class="col mb-5 mt-5"> -->
       <div class="card" style="width: 18rem;">
-        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <a class="stretched-link" href="#modalSmoothie" data-bs-toggle="modal" data-bs-target="#modalSmoothie"></a>
         <div class="img-wrapper"><img src="img/smoothie.jpg" class="card-img-top" alt="..." /></div>  
         <div class="card-body">
           <h5 class="card-title">Erdbeer Milchshake</h5>
@@ -182,14 +182,14 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalSmoothie" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalSmoothie">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
 
     <!-- <div class="col mb-5 mt-5"> -->
       <div class="card" style="width: 18rem;">
-        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <a class="stretched-link" href="#modalPancakes" data-bs-toggle="modal" data-bs-target="#modalPancakes"></a>
         <div class="img-wrapper"><img src="img/pancakes.jpg" class="card-img-top" alt="..." /></div> 
         <div class="card-body">
           <h5 class="card-title">Protein Pancakes</h5>
@@ -200,14 +200,14 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalPancakes" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalPancakes">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
 
     <!-- <div class="col mb-5 mt-5"> -->
       <div class="card" style="width: 18rem;">
-        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <a class="stretched-link" href="#modalPorridge" data-bs-toggle="modal" data-bs-target="#modalPorridge"></a>
         <div class="img-wrapper"><img src="img/porridge.jpg" class="card-img-top" alt="..." /></div>
         <div class="card-body">
           <h5 class="card-title">Porridge mit Beeren</h5>
@@ -217,7 +217,7 @@
           </p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Zum Rezept</a>
+            <a href="#modalPorridge" class="btn btn-transparent stretched-link" data-bs-toggle="modal" data-bs-target="#modalPorridge">Zum Rezept</a>
         </div>
       </div>
     <!-- </div> -->
@@ -230,76 +230,18 @@
 
     <footer>
       <p>Elemente des Footers: 
-        <button>AGB</button>
+        <button class="recipeButton">AGB</button>
         
-        <button>Datenschutz</button>
+        <button class="recipeButton">Datenschutz</button>
         
-        <button>Impressum</button>
+        <button class="recipeButton">Impressum</button>
 
-        <button>Kontakt</button>
+        <button class="recipeButton">Kontakt</button>
 
-        <button>Jobs</button>
+        <button class="recipeButton">Jobs</button>
 
         </p>
     </footer>
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalWraps"
-    >
-      Hähnchenwraps
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalSalad"
-    >
-      Kichererbsensalat
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalPorridge"
-    >
-      Kardamom-Porridge
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalCurry"
-    >
-      Hähnchencurry
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalSpaghetti"
-    >
-      Mexikanische Bolognese
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalSmoothie"
-    >
-      Erdbeer-Milchshake
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalPancakes"
-    >
-      Protein Pancakes
-    </button>
 
     <!-- ***** ***** Modals for clicking on recipe ***** ***** -->
 
@@ -384,7 +326,7 @@
           </div>
           <!-- End of Modal Content-->
           <div class="modal-footer">
-            <button type="button" class="btn recipeButton">
+            <button type="button" class="recipeButton">
               Zur Rezeptanleitung
             </button>
             <button
