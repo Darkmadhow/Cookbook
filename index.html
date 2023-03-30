@@ -23,20 +23,30 @@
   </head>
   <body>
     <header>
+      <div class="logo-container">
       <img src="img\branding.png" alt="Branding Logo Cook Book" />
+    </div>
     </header>
 
     <main>
-      <h1>Rezept der Woche (400 Pixel)</h1>
-      hero
+      <h1 class="text-center">Rezept der Woche</h1>
+
+      <div class="container">
+        <figure>
+      <img src="img\pasta.jpg" width="400" alt="Rezept der Woche Pasta mit Mais und Hack">
+      <figcaption>Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse</figcaption>
+    </figure>
+      </div>
     </main>
 
+
+  
 
 <!-- Sidebar start -->
 
 <div class="container-fluid">
   <div class="row flex-nowrap">
-    <div class="col-auto px-0  mx-5">
+    <div class="col-auto px-0  mr-5">
       <div
         id="sidebar"
         class="collapse collapse-horizontal show border-end"
@@ -77,13 +87,13 @@
 
 <!-- Sidebar collapse start -->
     
-    <main class="col ps-md-5 pt-5">
+    <main class="col ps-md-5 px-5">
       <a
         href="#"
         data-bs-target="#sidebar"
         data-bs-toggle="collapse"
         class="border rounded-3 p-1 text-decoration-none"
-        ><i class="bi bi-list bi-lg py-2 p-1"></i> Seitenmenü</a
+        ><i class="bi bi-list bi-lg py-2 pl-1"></i>Seitenmenü</a
       >
 
 <!-- Main Content start -->
@@ -95,10 +105,13 @@
       <hr />
       
 <!-- Grid recipe start -->
-<div class="container text-center" mb-3>
-  <div class="row row-cols-3">
-    <div class="col mb-5 mt-5">
+<div class="cardContainer text-center mb-3">
+  <!-- <div class="row"> -->
+
+    <!-- Card start-->
+    <!-- <div class="col mb-5 mt-5"> -->
       <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
         <div class="img-wrapper"><img
           src="img/wraps.jpg"
           class="card-img-top"
@@ -111,12 +124,17 @@
             Gemüse pro Portion ist dieses Gericht ein leckerer, ausgewogener
             Genuss.
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
-    <div class="col mb-5 mt-5">  
+    <!-- </div> -->
+    <!-- Card end-->
+
+    <!-- <div class="col mb-5 mt-5">   -->
       <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
         <div class="img-wrapper">
           <img src="img/salat.jpg" class="card-img-top" alt="..." />
         </div>
@@ -127,15 +145,17 @@
             schmeckt schön frisch, sättigt, ist gesund und in nur 20 Minuten
             fertig.
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
-    <div class="col mb-5 mt-5">
-      <div class="card" style="width: 18rem;">
-        <div class="img-wrapper"><img src="img/curry.jpg" class="card-img-top" alt="..." /></div>
+    <!-- </div> -->
 
-        
+    <!-- <div class="col mb-5 mt-5"> -->
+      <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <div class="img-wrapper"><img src="img/curry.jpg" class="card-img-top" alt="..." /></div>
         <div class="card-body">
           <h5 class="card-title">Mildes Hähnchencurry</h5>
           <p class="card-text">
@@ -143,30 +163,34 @@
             zauberst Du innerhalb kürzester Zeit ein ausgewogenes und vor
             allem leckeres Gericht auf den Tisch!
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
-    <div class="col mb-5 mt-5">
-      <div class="card" style="width: 18rem;">
-        <div class="img-wrapper"><img src="img/smoothie.jpg" class="card-img-top" alt="..." /></div>
+    <!-- </div> -->
 
-        
+    <!-- <div class="col mb-5 mt-5"> -->
+      <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <div class="img-wrapper"><img src="img/smoothie.jpg" class="card-img-top" alt="..." /></div>  
         <div class="card-body">
           <h5 class="card-title">Erdbeer Milchshake</h5>
           <p class="card-text">
             Dieser fruchgtige Trinkgenuss im Sommer trifft genau unseren
             Geschmack: Unser Erdbeermilchshake mit nur drei Zutaten!
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
-    <div class="col mb-5 mt-5">
-      <div class="card" style="width: 18rem;">
-        <div class="img-wrapper"><img src="img/pancakes.jpg" class="card-img-top" alt="..." /></div>
+    <!-- </div> -->
 
-        
+    <!-- <div class="col mb-5 mt-5"> -->
+      <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <div class="img-wrapper"><img src="img/pancakes.jpg" class="card-img-top" alt="..." /></div> 
         <div class="card-body">
           <h5 class="card-title">Protein Pancakes</h5>
           <p class="card-text">
@@ -174,25 +198,29 @@
             enthalten aber wenig Kohlehydrate. Dieses Rezept ist leicht und
             schnell zubereitet.
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
-    <div class="col mb-5 mt-5">
-      <div class="card" style="width: 18rem;">
-        <div class="img-wrapper"><img src="img/porridge.jpg" class="card-img-top" alt="..." /></div>
+    <!-- </div> -->
 
-        
+    <!-- <div class="col mb-5 mt-5"> -->
+      <div class="card" style="width: 18rem;">
+        <a class="stretched-link" href="#modalWraps" data-bs-toggle="modal" data-bs-target="#modalWraps"></a>
+        <div class="img-wrapper"><img src="img/porridge.jpg" class="card-img-top" alt="..." /></div>
         <div class="card-body">
           <h5 class="card-title">Porridge mit Beeren</h5>
           <p class="card-text">
             Dieses Porridge verführt mit orientalischen Aromen und wärmt von
             innen.
           </p>
-          <a href="#" class="btn btn-primary">Zum Rezept</a>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Zum Rezept</a>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
 
@@ -201,7 +229,18 @@
 
 
     <footer>
-      <p>Elemente des Footers: Impressum, etc.</p>
+      <p>Elemente des Footers: 
+        <button>AGB</button>
+        
+        <button>Datenschutz</button>
+        
+        <button>Impressum</button>
+
+        <button>Kontakt</button>
+
+        <button>Jobs</button>
+
+        </p>
     </footer>
 
     <!-- Button trigger modal -->
