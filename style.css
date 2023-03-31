@@ -3,8 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
+  margin: 0 auto;
+  max-width: 120rem;
   background-color: #ecf0fc;
 }
 /*--------------- Text Styling ---------------*/
@@ -22,6 +23,7 @@ p,
 a {
   font-family: "Poppins", sans-serif;
   color: #181c3b;
+  text-decoration: none;
 }
 
 a:hover {
@@ -76,26 +78,77 @@ html.dark-mode img {
   filter: invert(100%);
 }
 
+/*--------------- Main Wrapper ---------------*/
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*--------------- Sidebar: Navigation ---------------*/
-#sidebar {
-  width: 18.75rem;
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.category-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  padding-bottom: 3em;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 0.5em;
+}
+
+nav a {
+  display: flex;
+  margin-right: 2vw;
+  min-height: 3em;
+  align-items: center;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 /*--------------- Rezeptkarten Grid ---------------*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
 .cardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
 }
 
 .card {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 .card:hover {
   border-color: #617a0f;
   box-shadow: -4px 4px 6px 0 #164600;
 }
-.card-footer{
+.card-footer {
   background-color: #657e13;
   z-index: 1;
 }
@@ -103,14 +156,14 @@ html.dark-mode img {
   background: linear-gradient(15deg, #556e03, #7e9e13);
 }
 .logo-container {
-    float: right;
-  }
+  float: right;
+}
 .img-wrapper {
-    height: 15rem;
+  height: 15rem;
 }
 .img-wrapper img {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 /*--------------- Rezept Webseite: Navigation --------------------*/
 .rezept-nav {
@@ -126,17 +179,16 @@ html.dark-mode img {
 }
 /*--------------- Rezept Webseite: Header ---------------*/
 .rezept-header {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 1rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem;
 }
 .text-center {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
 
 
 .rezept-header img {
@@ -165,141 +217,133 @@ html.dark-mode img {
   }
 
 .rezept-overview {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    margin-bottom: 2rem;
-
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin-bottom: 2rem;
 }
 
 /*--------------- Rezept Webseite: Content ---------------*/
 .rezept-img {
-    width: 45%;
-    border: 1px solid black;
-    border-radius: 5px;
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .rezept-name {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid black;
-    width: 45%;
-    border-radius: 5px;
-    padding: 1rem 0;
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  width: 45%;
+  border-radius: 5px;
+  padding: 1rem 0;
 }
 
 .rezept-ingredients {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 li {
-    list-style-type: none;
-    padding: 0.6rem 0;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  padding: 0.6rem 0;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
-
 .rating-facts {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 4rem 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 4rem 0;
 }
 
 .rezept-utensils {
-    border: 1px solid black;
-    width: 25%;
-    text-align: center;
-    border-radius: 5px;
-    padding: 1rem 0;
+  border: 1px solid black;
+  width: 25%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem 0;
 }
 .rezept-bowl {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .rezept-pan {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 .rezept-clock {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .rezept-calories {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-
 .rezept-utensils li {
-    text-align: center;
+  text-align: center;
 }
 
 .rezept-facts {
-    border: 1px solid black;
-    width: 25%;
-    border-radius: 5px;
-    padding: 1rem 0;
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 5px;
+  padding: 1rem 0;
 }
 
 .rezept-facts li {
-    text-align: center;
+  text-align: center;
 }
 
 .rezept-rating {
-    border: 1px solid black;
-    width: 25%;
-    border-radius: 5px;
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: flex-end;
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 5px;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .duck-icons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .duck-icon {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    align-items: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
 }
-
 
 /*---------------- Kochschritte -----------------------*/
 
 .rezept-steps-section {
-    border: 1px solid black;
-    margin: 2rem 0;
+  border: 1px solid black;
+  margin: 2rem 0;
 }
 
 .rezept-steps-section h1 {
-    text-decoration: wavy underline;
-    text-align: center;
+  text-decoration: wavy underline;
+  text-align: center;
 }
-
 
 .rezept-steps {
-    border: 1px solid black;
-    margin: 1rem 0;
-    padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem 0;
+  padding: 1rem;
 }
 .rezept-steps h2 {
-    text-align: center;
-    text-decoration: wavy underline;
+  text-align: center;
+  text-decoration: wavy underline;
 }
-
 
 .rezept-footer {
   border: 1px solid black;
