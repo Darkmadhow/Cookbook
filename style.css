@@ -112,7 +112,7 @@ html.dark-mode img {
     height: 100%;
     object-fit: cover;
 }
-/*--------------- Rezept Webseite: Navigation ---------------*/
+/*--------------- Rezept Webseite: Navigation --------------------*/
 .rezept-nav {
   border: 1px solid black;
   display: flex;
@@ -138,9 +138,31 @@ html.dark-mode img {
   }
   
 
+
 .rezept-header img {
   border: 1px solid black;
 }
+#RezeptDerWochePastaMitMaisUndHack
+{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+  }
+
+
+  .object-fit { 
+    width: 600px; 
+    height: 600px; 
+    margin: 0 auto; 
+  }
+  .object-fit img { 
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+  }
 
 .rezept-overview {
     display: flex;
