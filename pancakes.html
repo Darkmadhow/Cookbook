@@ -1,133 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protein Pancakes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-<!-- NavBar
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Poppins"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookbook</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+      <img src="img\branding.png" alt="Branding Logo Cook Book" />
+    </div>
+    </header>
 
-<div class="rezept-nav">
+    <main>
+      <h1 class="text-center">Rezept der Woche</h1>
 
- <div class="rezept-navbar">
-<h1>Navigation</h1>
-</div> -->
-
-<!-- Branding
-<header>
-
-
-<div class ="rezept-header">
-    <img src="img/Branding.png" alt="Branding">
-    <button>Login</button>
-</div>
-
-</header>
-</div> -->
-
-
-
-
-
-
-<!--FlexBox: Rezept Bild 50% & Rezept Name/Zutaten 50%; space around; 80% des Bildschirms, da links Navbar von Kristof, Header kommt von Waldemar-->
-
-<div class="rezept-overview">
-<img class="rezept-img" src="img/pancakes.jpg" alt="Rezeptbild">
-<div class="rezept-name">
-<h1>Protein-Pancakes</h1><br><br>
-<p>Protein-Pancakes sind besonders reich an hochwertigem Eiweiß, enthalten aber wenig Kohlehydrate. Dieses Rezept ist leicht und schnell zubereitet.</p><br><br><br><br>
-<h2>Zutaten für 2 Portionen</h2><br><br>
-<div class="rezept-ingredients">
-<ul>
-    <li>4 Eier</li>
-    <li>100g Magerquark</li>
-    <li>55g Eiweißpulver, Vanille (Whey-Protein)</li>
-
-</ul>
-<ul> 
-    <li>200g Beeren</li>
-    <li>1 EL Öl, für die Pfanne</li>
-    <li>1 Prise Erythrit</li>
-</ul>
-</div>
-</div>
-</div>
+      <div class="container">
+        <figure>
+      <img src="img\pasta.jpg" width="400" alt="Rezept der Woche Pasta mit Mais und Hack">
+      <figcaption>Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse</figcaption>
+    </figure>
+      </div>
+    </main>
 
 
-<!--FlexBox: Rezension & Fakten space between; 80% des Bildschirms-->
-
-<div class="rating-facts">
-
-    <div class="rezept-utensils">
-        <h2>Tech-Stack</h2><br>
+<section class="main">
+  <div class="main-wrapper">
+    <aside class="column1">
+      <nav class="sidebar">
         <ul>
-            <li>Große Schüssel</li>
-            <img src="img/bowl.png" alt="Große Schüssel" class="rezept-bowl">
-            <li>Pfanne</li>
-            <img src="img/pfanne.png" alt="Große Pfanne" class="rezept-bowl">
-            <li>Scharfes Messer</li>
-            <img src="img/kitchen-mixer-icon.png" alt="Mixer" class="rezept-bowl">
+          <div class="category-box"><h4>Kategorien</h4>
+            <li>
+              <a href="#">Vegetarisch</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+            <li>
+              <a href="">Proteinreich</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+            <li>
+              <a href="">High Carbs</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+            <li>
+              <a href="">Sweets</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+            <li>
+              <a href="">Für 2 Personen</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+            <li>
+              <a href="">Snacks</a
+              ><img src="img/arrow-right.svg" alt="" />
+            </li>
+          </div>
         </ul>
-    </div>
-
-    <div class="rezept-facts">
-        <h2>Fakten</h2><br>
-        <li>Gesamtzeit: 15 Minuten</li>
-        <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
-        <li>Arbeitszeit: 20 Minuten </li> 
-        <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
-        <li>Energie: 381 kcal pro Portion </li> 
-        <img src="img/calories.png" alt="Kalorien" class="rezept-calories">
-    </div>
-
-    <div class="rezept-rating">
-        <h2>Bewertung</h2><br><br><br><br><br>
-        <div class="duck-icons">
-            <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-            <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-            <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-            <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-            <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-        </div>
-    </div>
-
-</div>
+      </nav>
+    </aside>
 
 
-<!--FlexBox: Schritte als Spalte; 80% des Bildschirms-->
+  <div class="main-content">
+    <div class="column2">
+        <div class="rezept-overview">
+            <img class="rezept-img" src="img/pancakes.jpg" alt="Rezeptbild">
+            <div class="rezept-name">
+            <h1>Protein-Pancakes</h1><br><br>
+            <p>Protein-Pancakes sind besonders reich an hochwertigem Eiweiß, enthalten aber wenig Kohlehydrate. Dieses Rezept ist leicht und schnell zubereitet.</p><br><br><br><br>
+            <h2>Zutaten für 2 Portionen</h2><br><br>
+            <div class="rezept-ingredients">
+            <ul>
+                <li>4 Eier</li>
+                <li>100g Magerquark</li>
+                <li>55g Eiweißpulver, Vanille (Whey-Protein)</li>
+            
+            </ul>
+            <ul> 
+                <li>200g Beeren</li>
+                <li>1 EL Öl, für die Pfanne</li>
+                <li>1 Prise Erythrit</li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            
+            
+            <!--FlexBox: Rezension & Fakten space between; 80% des Bildschirms-->
+            
+            <div class="rating-facts">
+            
+                <div class="rezept-utensils">
+                    <h2>Tech-Stack</h2><br>
+                    <ul>
+                        <li>Große Schüssel</li>
+                        <img src="img/bowl.png" alt="Große Schüssel" class="rezept-bowl">
+                        <li>Pfanne</li>
+                        <img src="img/pfanne.png" alt="Große Pfanne" class="rezept-bowl">
+                        <li>Scharfes Messer</li>
+                        <img src="img/kitchen-mixer-icon.png" alt="Mixer" class="rezept-bowl">
+                    </ul>
+                </div>
+            
+                <div class="rezept-facts">
+                    <h2>Fakten</h2><br>
+                    <li>Gesamtzeit: 15 Minuten</li>
+                    <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
+                    <li>Arbeitszeit: 20 Minuten </li> 
+                    <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
+                    <li>Energie: 381 kcal pro Portion </li> 
+                    <img src="img/calories.png" alt="Kalorien" class="rezept-calories">
+                </div>
+            
+                <div class="rezept-rating">
+                    <h2>Bewertung</h2><br><br><br><br><br>
+                    <div class="duck-icons">
+                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                    </div>
+                </div>
+            
+            </div>
+            
+            
+            <!--FlexBox: Schritte als Spalte; 80% des Bildschirms-->
+            
+            <div class="rezept-steps-section"><h1>Schritte für einen erfolgreichen Merge</h1><br><br>
+            <div class="rezept-steps">
+                <h2>Push 1</h2> <br>
+                <p>Für die Protein-Pancakes zuerst die frischen Eier in eine Schüssel aufschlagen und schaumig rühren. Dann Magerquark, Erythrit sowie Proteinpulver hinzufügen und alle Zutaten gut verrühren.
+                </p>
+            </div>
+            <div class="rezept-steps">
+                <h2>Push 2</h2> <br>
+                <p>Dann das Öl in einer beschichteten Pfanne erhitzen und pro Pancake etwa 2 Esslöffel Teig in die Pfanne geben. Die Pancakes bei mittlerer Hitze kurz backen, bis sich auf der Oberfläche Bläschen bilden, dann wenden und fertig backen.
+                </p>
+            </div>
+            <div class="rezept-steps">
+                <h2>Push 3</h2> <br>
+                <p>Zum Schluss die kleinen Pfannkuchen auf vorgewärmten Tellern anrichten, mit den frischen Beeren belegen und sofort servieren.
+                </p>
+            </div>
+            </div>
+            <footer>
+                <p>Elemente des Footers: 
+                  <button class="recipeButton">AGB</button>
+                  
+                  <button class="recipeButton">Datenschutz</button>
+                  
+                  <button class="recipeButton">Impressum</button>
+          
+                  <button class="recipeButton">Kontakt</button>
+          
+                  <button class="recipeButton">Jobs</button>
+          
+                  </p>
+              </footer>
 
-<div class="rezept-steps-section"><h1>Schritte für einen erfolgreichen Merge</h1><br><br>
-<div class="rezept-steps">
-    <h2>Push 1</h2> <br>
-    <p>Für die Protein-Pancakes zuerst die frischen Eier in eine Schüssel aufschlagen und schaumig rühren. Dann Magerquark, Erythrit sowie Proteinpulver hinzufügen und alle Zutaten gut verrühren.
-    </p>
-</div>
-<div class="rezept-steps">
-    <h2>Push 2</h2> <br>
-    <p>Dann das Öl in einer beschichteten Pfanne erhitzen und pro Pancake etwa 2 Esslöffel Teig in die Pfanne geben. Die Pancakes bei mittlerer Hitze kurz backen, bis sich auf der Oberfläche Bläschen bilden, dann wenden und fertig backen.
-    </p>
-</div>
-<div class="rezept-steps">
-    <h2>Push 3</h2> <br>
-    <p>Zum Schluss die kleinen Pfannkuchen auf vorgewärmten Tellern anrichten, mit den frischen Beeren belegen und sofort servieren.
-    </p>
-</div>
-</div>
-
-<!-- Footer 100% width; kommt von Waldemar!
-
-<footer class="rezept-footer">
-<ul>
-    <a href="#">Impressum</a>
-    <a href="#">Kontakt</a>
-    <a href="#">Jobs</a>
-</ul>
-
-</footer> -->
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
