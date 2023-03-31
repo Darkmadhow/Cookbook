@@ -3,15 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 body {
   margin: 0 auto;
   max-width: 120rem;
-=======
-
-body {
   background-color: #ecf0fc;
->>>>>>> main
 }
 /*--------------- Text Styling ---------------*/
 h1,
@@ -153,7 +148,7 @@ img {
   border-color: #617a0f;
   box-shadow: -4px 4px 6px 0 #164600;
 }
-.card-footer{
+.card-footer {
   background-color: #657e13;
   z-index: 1;
 }
@@ -200,18 +195,10 @@ img {
 }
 
 .rezept-overview {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
-  margin: 2rem 0;
-=======
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    margin-bottom: 2rem;
-
->>>>>>> main
+  margin-bottom: 2rem;
 }
 
 /*--------------- Rezept Webseite: Content ---------------*/
@@ -237,32 +224,18 @@ img {
 }
 
 li {
-<<<<<<< HEAD
   list-style-type: none;
   padding: 0.6rem 0;
   text-align: left;
-=======
-    list-style-type: none;
-    padding: 0.6rem 0;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
->>>>>>> main
+  font-family: "Poppins", sans-serif;
 }
 
 .rating-facts {
-<<<<<<< HEAD
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 2rem 0;
-=======
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 4rem 0;
->>>>>>> main
+  margin: 4rem 0;
 }
 
 .rezept-utensils {
@@ -331,18 +304,13 @@ li {
 /*---------------- Kochschritte -----------------------*/
 
 .rezept-steps-section {
-<<<<<<< HEAD
   border: 1px solid black;
   margin: 2rem 0;
-=======
-    border: 1px solid black;
-    margin: 2rem 0;
 }
 
 .rezept-steps-section h1 {
-    text-decoration: wavy underline;
-    text-align: center;
->>>>>>> main
+  text-decoration: wavy underline;
+  text-align: center;
 }
 
 .rezept-steps {
@@ -351,19 +319,9 @@ li {
   padding: 1rem;
 }
 .rezept-steps h2 {
-<<<<<<< HEAD
   text-align: center;
+  text-decoration: wavy underline;
 }
-
-.rezept-steps-section h1 {
-  text-align: center;
-}
-=======
-    text-align: center;
-    text-decoration: wavy underline;
-}
-
->>>>>>> main
 
 .rezept-footer {
   border: 1px solid black;
