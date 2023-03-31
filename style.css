@@ -69,14 +69,42 @@ a:hover {
   color: #fff;
 }
 
-/*--------------- DARK MODE Switch ---------------*/
-html.dark-mode {
-  filter: invert(100%);
+/*--------------- Header ---------------*/
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+.hero {
+  background-image: url('img/pasta.jpg');
+  height: 50vh;
+  background-size: cover;
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 4rem;
+ 
+}
+.hero div {
+background: linear-gradient(90deg, transparent 50%, #657e13aa 70%,#657e13ee 90%);
+width:  100%;
+height: 100%;
+color: #e5e5e5;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: flex-end;
+padding-right: 2rem;
+
+}
+/* .hero p {
+  color: #e5e5e5;
+} */
+.hero h1 {
+  color: #e5e5e5;
 }
 
-html.dark-mode img {
-  filter: invert(100%);
-}
 
 /*--------------- Main Wrapper ---------------*/
 
@@ -154,9 +182,6 @@ img {
 }
 .card-footer:hover {
   background: linear-gradient(15deg, #556e03, #7e9e13);
-}
-.logo-container {
-  float: right;
 }
 .img-wrapper {
   height: 15rem;
