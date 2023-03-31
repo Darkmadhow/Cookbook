@@ -112,7 +112,7 @@ html.dark-mode img {
     height: 100%;
     object-fit: cover;
 }
-/*--------------- Rezept Webseite: Navigation ---------------*/
+/*--------------- Rezept Webseite: Navigation --------------------*/
 .rezept-nav {
   border: 1px solid black;
   display: flex;
