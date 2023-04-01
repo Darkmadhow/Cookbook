@@ -5,7 +5,6 @@
 }
 body {
   margin: 0 auto;
-  max-width: 120rem;
   background-color: #ecf0fc;
 }
 /*--------------- Text Styling ---------------*/
@@ -17,6 +16,13 @@ h5,
 h6 {
   font-family: "Space Mono", monospace;
   color: #66960e;
+}
+h3 {
+  font-size: calc(1.25rem + 0.3vw);
+}
+h5 {
+  font-weight: 500;
+  text-shadow: 0px 1px #164600;
 }
 
 p,
@@ -77,40 +83,50 @@ header {
   padding-top: 2rem;
 }
 .hero {
-  background-image: url('img/pasta.jpg');
+  background-image: url("img/pasta.jpg");
   height: 50vh;
   background-size: cover;
-  background-position: 0 -300px;
+  background-position: bottom 40% right 0;
   background-repeat: no-repeat;
+  background-attachment: local;
   text-align: center;
   margin-bottom: 4rem;
- 
 }
 .hero div {
-background: linear-gradient(90deg, transparent 50%, #657e13aa 70%,#657e13ee 90%);
-width:  100%;
-height: 100%;
-color: #e5e5e5;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: flex-end;
-padding-right: 2rem;
-
-}
-/* .hero p {
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    #657e13aa 70%,
+    #657e13ee 90%
+  );
+  width: 100%;
+  height: 100%;
   color: #e5e5e5;
-} */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-right: 2rem;
+  font-weight: 500;
+}
+.hero span {
+  text-align: right;
+}
+
 .hero h1 {
   color: #e5e5e5;
 }
 
-
 /*--------------- Main Wrapper ---------------*/
+.main {
+  margin-bottom: 4rem;
+}
 
 .main-wrapper {
   display: flex;
   justify-content: space-between;
+  column-gap: 2rem;
+  margin-left: 1rem;
 }
 
 /*--------------- Sidebar: Navigation ---------------*/
@@ -127,27 +143,23 @@ padding-right: 2rem;
 }
 nav ul {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 }
-.category-box {
-  display: flex;
+.navbar-expand-md .navbar-nav {
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-
-  padding-bottom: 3em;
 }
-li {
+
+nav li {
   display: flex;
   justify-content: space-between;
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   padding-left: 0.5em;
+  margin-right: 0.5rem;
 }
 
 nav a {
   display: flex;
-  margin-right: 2vw;
   min-height: 3em;
   align-items: center;
 }
@@ -215,31 +227,28 @@ img {
   text-align: center;
 }
 
-
 .rezept-header img {
   border: 1px solid black;
 }
-#RezeptDerWochePastaMitMaisUndHack
-{
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
-  }
+#RezeptDerWochePastaMitMaisUndHack {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-
-  .object-fit { 
-    width: 600px; 
-    height: 600px; 
-    margin: 0 auto; 
-  }
-  .object-fit img { 
-    object-fit: cover; 
-    width: 100%; 
-    height: 100%;
-  }
+.object-fit {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+.object-fit img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .rezept-overview {
   display: flex;
@@ -374,6 +383,46 @@ li {
   border: 1px solid black;
 }
 
+/*--------------- Footer ---------------*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1rem;
+  background-color: #000C1A;
+  box-shadow: 0 -1rem 1rem 2rem #000C1A;
+  padding: 0 2rem 2rem 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+footer a{
+  color: #ecf0fc;
+}
+
+footer .legal {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contribute {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer .socialLinks {
+  display: flex;
+  flex-direction: column;
+}
+footer .socialContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
 /*--------------- Rezept Modal Popup ---------------*/
 .modal-body {
   padding: 0 1rem;
@@ -425,7 +474,7 @@ li {
 
 .modalTags {
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 0.85rem;
 }
 .modalTags .recipeTag {
@@ -455,4 +504,81 @@ li {
 }
 .ingredientItem:nth-child(odd) {
   background-color: #e5e5e5;
+}
+
+/*--------------- Media Breakpoints ---------------*/
+@media only screen and (min-width: 1200px) {
+  .modal {
+    --bs-modal-width: 700px;
+  }
+}
+@media only screen /*and (min-width: 831px)*/ and (max-width: 1250px) {
+  .hero div {
+    background: linear-gradient( 90deg, transparent 30%, #657e13aa 70%, #657e13ee 90% );
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .hero div{
+    background: linear-gradient( 90deg, transparent 15%, #657e13aa 50%, #657e13ee 70% );
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  /* .category-box {
+    flex-direction: row;
+    padding-bottom: 0;
+    column-gap: 1rem;
+    align-items: center;
+  } */
+
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+  /* nav ul {
+    flex-direction: row;
+  } */
+
+  .main-content {
+    margin: 0 2rem;
+  }
+
+  .cardContainer {
+    margin: 0 auto;
+    column-gap: 5vw;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero div{
+    background: linear-gradient( 90deg, transparent 15%, #657e13aa 30%, #657e13ee 70% );
+    padding-right: 1rem;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .legal, .contribute {
+    text-align: center;
+  }
+  footer .recipeButton {
+    margin: 0.7rem 0;
+  }
+
+  .modalTitle {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }
