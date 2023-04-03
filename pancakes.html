@@ -22,158 +22,811 @@
     <title>Cookbook</title>
   </head>
   <body>
+
     <header>
       <div class="logo-container">
-      <img src="img\branding.png" alt="Branding Logo Cook Book" />
-    </div>
+        <img src="img\Branding.png" alt="Branding Logo Cook Book" />
+      </div>
     </header>
 
-    <main>
-      <h1 class="text-center">Rezept der Woche</h1>
-
-      <div class="container">
-        <figure>
-      <img src="img\pasta.jpg" width="400" alt="Rezept der Woche Pasta mit Mais und Hack">
-      <figcaption>Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse</figcaption>
-    </figure>
+    <section class="hero">
+      <div>
+        <h1 class=>Rezept der Woche</h1>
+        <span>Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse</span>
       </div>
-    </main>
-
+    </section>
 
 <section class="main">
   <div class="main-wrapper">
     <aside class="column1">
-      <nav class="sidebar">
-        <ul>
-          <div class="category-box"><h4>Kategorien</h4>
-            <li>
+      <nav class="sidebar navbar navbar-expand-md">
+        <h4>Kategorien</h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCategories" aria-controls="navbarCategories" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="category-box collapse navbar-collapse" id="navbarCategories">
+          <ul class="navbar-nav" >
+            <li class="nav-item">
               <a href="#">Vegetarisch</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-            <li>
-              <a href="">Proteinreich</a
+            <li class="nav-item">
+              <a href="">Suppen</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-            <li>
-              <a href="">High Carbs</a
+            <li class="nav-item">
+              <a href="">Geflügel</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-            <li>
-              <a href="">Sweets</a
+            <li class="nav-item">
+              <a href="">Pasta</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-            <li>
-              <a href="">Für 2 Personen</a
+            <li class="nav-item">
+              <a href="">Getränke</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-            <li>
+            <li class="nav-item">
               <a href="">Snacks</a
               ><img src="img/arrow-right.svg" alt="" />
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </aside>
 
 
-  <div class="main-content">
-    <div class="column2">
-        <div class="rezept-overview">
-            <img class="rezept-img" src="img/pancakes.jpg" alt="Rezeptbild">
-            <div class="rezept-name">
-            <h1>Protein-Pancakes</h1><br><br>
-            <p>Protein-Pancakes sind besonders reich an hochwertigem Eiweiß, enthalten aber wenig Kohlehydrate. Dieses Rezept ist leicht und schnell zubereitet.</p><br><br><br><br>
-            <h2>Zutaten für 2 Portionen</h2><br><br>
-            <div class="rezept-ingredients">
-            <ul>
-                <li>4 Eier</li>
-                <li>100g Magerquark</li>
-                <li>55g Eiweißpulver, Vanille (Whey-Protein)</li>
-            
-            </ul>
-            <ul> 
-                <li>200g Beeren</li>
-                <li>1 EL Öl, für die Pfanne</li>
-                <li>1 Prise Erythrit</li>
-            </ul>
-            </div>
-            </div>
-            </div>
-            
-            
-            <!--FlexBox: Rezension & Fakten space between; 80% des Bildschirms-->
-            
-            <div class="rating-facts">
-            
-                <div class="rezept-utensils">
-                    <h2>Tech-Stack</h2><br>
-                    <ul>
-                        <li>Große Schüssel</li>
-                        <img src="img/bowl.png" alt="Große Schüssel" class="rezept-bowl">
-                        <li>Pfanne</li>
-                        <img src="img/pfanne.png" alt="Große Pfanne" class="rezept-bowl">
-                        <li>Scharfes Messer</li>
-                        <img src="img/kitchen-mixer-icon.png" alt="Mixer" class="rezept-bowl">
-                    </ul>
-                </div>
-            
-                <div class="rezept-facts">
-                    <h2>Fakten</h2><br>
-                    <li>Gesamtzeit: 15 Minuten</li>
-                    <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
-                    <li>Arbeitszeit: 20 Minuten </li> 
-                    <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
-                    <li>Energie: 381 kcal pro Portion </li> 
-                    <img src="img/calories.png" alt="Kalorien" class="rezept-calories">
-                </div>
-            
-                <div class="rezept-rating">
-                    <h2>Bewertung</h2><br><br><br><br><br>
-                    <div class="duck-icons">
-                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-                        <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
-                    </div>
-                </div>
-            
-            </div>
-            
-            
-            <!--FlexBox: Schritte als Spalte; 80% des Bildschirms-->
-            
-            <div class="rezept-steps-section"><h1>Schritte für einen erfolgreichen Merge</h1><br><br>
-            <div class="rezept-steps">
-                <h2>Push 1</h2> <br>
-                <p>Für die Protein-Pancakes zuerst die frischen Eier in eine Schüssel aufschlagen und schaumig rühren. Dann Magerquark, Erythrit sowie Proteinpulver hinzufügen und alle Zutaten gut verrühren.
-                </p>
-            </div>
-            <div class="rezept-steps">
-                <h2>Push 2</h2> <br>
-                <p>Dann das Öl in einer beschichteten Pfanne erhitzen und pro Pancake etwa 2 Esslöffel Teig in die Pfanne geben. Die Pancakes bei mittlerer Hitze kurz backen, bis sich auf der Oberfläche Bläschen bilden, dann wenden und fertig backen.
-                </p>
-            </div>
-            <div class="rezept-steps">
-                <h2>Push 3</h2> <br>
-                <p>Zum Schluss die kleinen Pfannkuchen auf vorgewärmten Tellern anrichten, mit den frischen Beeren belegen und sofort servieren.
-                </p>
-            </div>
-            </div>
-            <footer>
-                <p>Elemente des Footers: 
-                  <button class="recipeButton">AGB</button>
-                  
-                  <button class="recipeButton">Datenschutz</button>
-                  
-                  <button class="recipeButton">Impressum</button>
-          
-                  <button class="recipeButton">Kontakt</button>
-          
-                  <button class="recipeButton">Jobs</button>
-          
+
+    <div class="main-content">
+      <div class="column2">
+          <div class="rezept-overview">
+              <img class="rezept-img" src="img/pancakes.jpg" alt="Rezeptbild">
+              <div class="rezept-name">
+              <h1>Protein-Pancakes</h1><br><br>
+              <p>Protein-Pancakes sind besonders reich an hochwertigem Eiweiß, enthalten aber wenig Kohlehydrate. Dieses Rezept ist leicht und schnell zubereitet.</p><br><br><br><br>
+              <h2>Zutaten für 2 Portionen</h2><br><br>
+              <div class="rezept-ingredients">
+              <ul>
+                  <li>4 Eier</li>
+                  <li>100g Magerquark</li>
+                  <li>55g Eiweißpulver, Vanille (Whey-Protein)</li>
+              
+              </ul>
+              <ul> 
+                  <li>200g Beeren</li>
+                  <li>1 EL Öl, für die Pfanne</li>
+                  <li>1 Prise Erythrit</li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              
+              
+              <!--FlexBox: Rezension & Fakten space between; 80% des Bildschirms-->
+              
+              <div class="rating-facts">
+              
+                  <div class="rezept-utensils">
+                      <h2>Tech-Stack</h2><br>
+                      <ul>
+                          <li>Große Schüssel</li>
+                          <img src="img/bowl.png" alt="Große Schüssel" class="rezept-bowl">
+                          <li>Pfanne</li>
+                          <img src="img/pfanne.png" alt="Große Pfanne" class="rezept-bowl">
+                          <li>Scharfes Messer</li>
+                          <img src="img/kitchen-mixer-icon.png" alt="Mixer" class="rezept-bowl">
+                      </ul>
+                  </div>
+              
+                  <div class="rezept-facts">
+                      <h2>Fakten</h2><br>
+                      <li>Gesamtzeit: 15 Minuten</li>
+                      <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
+                      <li>Arbeitszeit: 20 Minuten </li> 
+                      <img src="img/15.png" alt="15 Minuten" class="rezept-clock">
+                      <li>Energie: 381 kcal pro Portion </li> 
+                      <img src="img/calories.png" alt="Kalorien" class="rezept-calories">
+                  </div>
+              
+                  <div class="rezept-rating">
+                      <h2>Bewertung</h2><br><br><br><br><br>
+                      <div class="duck-icons">
+                          <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                          <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                          <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                          <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                          <img src="img/rubber-duck.png" alt="Bewertung" class="duck-icon">
+                      </div>
+                  </div>
+              
+              </div>
+              
+              
+              <!--FlexBox: Schritte als Spalte; 80% des Bildschirms-->
+              
+              <div class="rezept-steps-section"><h1>Schritte für einen erfolgreichen Merge</h1><br><br>
+              <div class="rezept-steps">
+                  <h2>Push 1</h2> <br>
+                  <p>Für die Protein-Pancakes zuerst die frischen Eier in eine Schüssel aufschlagen und schaumig rühren. Dann Magerquark, Erythrit sowie Proteinpulver hinzufügen und alle Zutaten gut verrühren.
                   </p>
-              </footer>
+              </div>
+              <div class="rezept-steps">
+                  <h2>Push 2</h2> <br>
+                  <p>Dann das Öl in einer beschichteten Pfanne erhitzen und pro Pancake etwa 2 Esslöffel Teig in die Pfanne geben. Die Pancakes bei mittlerer Hitze kurz backen, bis sich auf der Oberfläche Bläschen bilden, dann wenden und fertig backen.
+                  </p>
+              </div>
+              <div class="rezept-steps">
+                  <h2>Push 3</h2> <br>
+                  <p>Zum Schluss die kleinen Pfannkuchen auf vorgewärmten Tellern anrichten, mit den frischen Beeren belegen und sofort servieren.
+                  </p>
+              </div>
+              </div>
+
+<footer>
+  <div class="legal">
+    <h3>Unternehmen</h3>
+    <ul>
+      <a href="">Über Uns</a>
+      <a href="">Impressum</a>
+      <a href="">Datenschutz</a>
+      <a href="">Kontakt</a>
+    </ul>
+  </div> 
+  <div class="contribute">
+    <h3>Mach mit!</h3>
+    <button class="recipeButton">Rezept einreichen</button>
+    <button class="recipeButton">Newsletter abonnieren</button>
+  </div>
+  <div class="socialLinks">
+    <h3>Finde uns auf:</h3>
+    <div class="socialContainer">
+      <a href="" class="social"><img src="img/instagram.png" alt="Link to Instagram"></a>
+      <a href="" class="social"><img src="img/twitter.png" alt="Link to Twitter"></a>
+      <a href="" class="social"><img src="img/facebook.png" alt="Link to Facebook"></a>
+    </div>
+  </div>
+    
+</footer>
+
+    <!-- ***** ***** Modals for clicking on recipe ***** ***** -->
+
+    <!-- ***** Wraps Recipe ***** -->
+    <div class="modal fade" id="modalWraps" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+                <img src="img/wraps.jpg" alt="Leckere Wraps mit Hähnchen" />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Wrap recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">             
+              <div class="modalTitle">
+                <h5>Wraps mit mariniertem Hähnchen</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">2 Personen</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">Gemüse</span>
+                <span class="recipeTag">High protein</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>250g Hähnchengeschnetzeltes</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>8 Tortillawraps</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>100g Hirtenkäse</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>70g Hummus</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Gurke</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>2 Tomaten</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>100g Sahnejoghurt</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>50g Oliven</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Zitrone</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>10g Petersilie</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="recipeButton" onclick="location.href = 'wraps.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Salad Recipe ***** -->
+    <div class="modal fade" id="modalSalad" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+              <img src="img/salat.jpg" alt="Kichererbsensalat mit Feta" />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Salad recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Kichererbsensalat mit Feta</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">4 Personen</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">Gemüse</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>1 Dose Kichererbsen</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>4 Tomaten</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Granatapfel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Zwiebel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>5 Stiele Koriander</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>5 Stiele Dill</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>3 EL Balsamico-Essig</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>4 EL Olivenöl</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>200g Fetakäse</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'Kichererbsensalat.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Porridge Recipe ***** -->
+    <div class="modal fade" id="modalPorridge" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+              <img src="img/porridge.jpg" alt="Kardamom-Porridge mit Beeren" />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Porridge recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Kardamom-Porridge mit Beeren</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">2 Personen</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">Süß</span>
+                <span class="recipeTag">Früchte</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>1 Apfel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>2 Spritzer Zitronensaft</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>3 Kardamom-Kapseln</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>125ml Vollmilch</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>60g zarte Haferflocken</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>200g gemischte Beeren</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 TL ungesalzene Pistazienkerne</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>2 Msp. Zimtpulver</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1TL Honig</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'porridge.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Curry Recipe ***** -->
+    <div class="modal fade" id="modalCurry" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+              <img src="img/curry.jpg" alt="Mildes Hähnchencurry mit Reis" />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Curry recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Mildes Hähnchencurry</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">2 Personen</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">Familie</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>250g Hähnchengeschnetzeltes</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>50g Brokkoliröschen</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Karotte</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>250ml Kokosmilch</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>150g Basmatireis</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>150g Buschbohnen</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>25g gelbe Currypaste</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>5g Koriander</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>5g Petersilie (glatt)</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>4g Madras Curry</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Knoblauchzehe</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1/2 Zwiebel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>2 EL Rapsöl</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 EL Butter</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'curry.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Spaghetti Recipe ***** -->
+    <div
+      class="modal fade"
+      id="modalSpaghetti"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+            <img
+              src="img/pasta.jpg"
+              alt="Mexikanische Spaghetti Bolognese mit Mais und Parmesankäse"
+            />
+          </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Spaghetti recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Mexikanische Spaghetti Bolognese</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">2 Personen</span>
+                <span class="recipeTag">Mittel</span>
+                <span class="recipeTag">Familie</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>200g Simmentaler Rinderhackfleisch</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>270g Spaghetti</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>150g Mais</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Zwiebel</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>35g Tomatenmark</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Karotte</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>390g stückige Tomaten</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>6g Hühnerbrühe</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>20g geriebener Hartkäse</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'pasta.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Smoothie Recipe ***** -->
+    <div class="modal fade" id="modalSmoothie" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+              <img
+                src="img/smoothie.jpg"
+                alt="Erdbeermilchshake im Glas mit Strohhalm und Erdbeeren"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Smoothie recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Erdbeer-Milchshake</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">1 Person</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">Erdbeeren</span>
+                <span class="recipeTag">Getränk</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>150g Erdbeeren</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>300ml Milch</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 EL Zucker</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'milkshake.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Pancakes Recipe ***** -->
+    <div class="modal fade" id="modalPancakes" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog .modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modalImage">
+                <img src="img/pancakes.jpg" alt="Protein-Pancake Stapel mit Beeren garniert" />
+            </div>
+            <button
+              type="button"
+              class="btn-close closeModalBtn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Content for Pancakes recipe-->
+          <div class="modal-body">
+            <div class="modalContainer">
+              <div class="modalTitle">
+                <h5>Protein-Pancakes</h5>
+                <p class="modalRating">
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+              </div>
+              <div class="modalTags">
+                <span class="recipeTag">2 Personen</span>
+                <span class="recipeTag">Einfach</span>
+                <span class="recipeTag">High Protein</span>
+                <span class="recipeTag">Dessert</span>
+              </div>
+              <div class="modalIngredients">
+                <h3>Zutaten</h3>
+                <hr />
+                <div class="ingredientItem">
+                  <span>4 Eier</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>100g Magerquark</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>55g Eiweißpulver Vanille</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>200g Erdbeeren/Blaubeeren</span>
+                  <input type="checkbox" />
+                </div>
+                <div class="ingredientItem">
+                  <span>1 Prise Erythrit</span>
+                  <input type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Modal Content-->
+          <div class="modal-footer">
+            <button type="button" class="btn recipeButton" onclick="location.href = 'pancakes.html';">
+              Zur Rezeptanleitung
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** ***** End of Recipe Modals Section ***** *****-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
