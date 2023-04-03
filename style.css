@@ -183,10 +183,12 @@ img {
 
 .card {
   margin-bottom: 5rem;
+  transition-duration: 0.2s
 }
 .card:hover {
   border-color: #617a0f;
   box-shadow: -4px 4px 6px 0 #164600;
+  transform: translate(5px, -5px);
 }
 .card-footer {
   background-color: #657e13;
